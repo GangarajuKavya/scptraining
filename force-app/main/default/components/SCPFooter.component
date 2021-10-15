@@ -1,0 +1,343 @@
+<apex:component id="headerComponent">
+  <html>
+<header>
+<script>
+.header-bottom {
+    background-color: #fff;
+    -moz-box-shadow: 0 0 5px #E8E8E8;
+    -webkit-box-shadow: 0 0 5px #E8E8E8;
+    box-shadow: 0 0 5px #E8E8E8;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.flex-row {
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+@media (min-width: 992px)
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+@media only screen and (max-width: 767px)
+.navbar-toggler {
+    background-color: #fff;
+    padding: 29px 24px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: 0;
+    line-height: inherit;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span:nth-child(3) {
+    top: 20px;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span {
+    background: #000;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bg-transparent {
+    background-color: transparent!important;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+@media only screen and (min-width: 768px)
+ul.navbar-nav li {
+    position: relative;
+    float: left;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+.p-0 {
+    padding: 0!important;
+}
+
+element.style {
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+.logo {
+    max-width: 136px;
+    padding: 7px 0;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+button {
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+.animated-icon1, .animated-icon2, .animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+@media only screen and (max-width: 767px)
+#navbarSupportedContent {
+    border-top: solid 3px #fff;
+    border-bottom: solid 2px #fff;
+    background: #209FDA;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span:nth-child(3) {
+    top: 20px;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span {
+    background: #000;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-collapse {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+.collapse:not(.show) {
+    display: none;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span:nth-child(1) {
+    top: 0px;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span {
+    background: #000;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span:nth-child(2) {
+    top: 10px;
+}
+@media only screen and (max-width: 767px)
+.animated-icon1 span {
+    background: #000;
+}
+</script>
+        
+        <section class="header-bottom">
+            <div class="container">
+                <div class="flex-row">
+                    <nav class="navbar navbar-expand-lg bg-transparent d-flex p-0">
+                    
+                        <div class="logo">
+                            <a href="https://syerraconsultingpartners.com/" class="custom-logo-link" rel="home" aria-current="page"><img width="523" height="341" src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/uploads/2019/09/logo-1.png?time=1602241770" class="custom-logo" alt="Sherpa" srcset="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/uploads/2019/09/logo-1.png 523w, https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/uploads/2019/09/logo-1-300x196.png 300w" sizes="(max-width: 523px) 100vw, 523px"/></a>                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            
+                            <div class="animated-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            </div>
+                        </button>
+                        <div class="navbar-collapse collapsed" id="navbarSupportedContent">
+                            <ul id="menu-main-menu" class="navbar-nav ml-auto"><li id="menu-item-649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-649"><a href="https://sherpaconsultingpartners.com/">Home</a></li>
+                            <li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="https://sherpaconsultingpartners.com/services/">Services</a></li>
+                            <li id="menu-item-493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-493"><a href="https://sherpaconsultingpartners.com/about-us/">About Us</a></li>
+                            <li id="menu-item-497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-497"><a href="https://sherpaconsultingpartners.com/problems-we-solve/">Problems We Solve</a></li>
+                            <li id="menu-item-496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496"><a href="https://sherpaconsultingpartners.com/insight-news/">Insight &amp; News</a></li>
+                            <li id="menu-item-494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-494"><a href="https://sherpaconsultingpartners.com/contact-us/">Contact Us</a></li>
+                            <li id="menu-item-495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-495"><a href="https://dev1-scpcareers.cs64.force.com" aria-current="page">Careers</a></li>
+                            
+</ul>                    </div>
+
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+ </html>
+</apex:component>

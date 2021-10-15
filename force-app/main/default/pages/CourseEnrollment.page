@@ -1,0 +1,59 @@
+<apex:page showHeader="false" controller="SCP_CourseEnrollementController" title="SCP Course Enrollment" >
+ <apex:composition Template="SCPTemplate">
+  <apex:define name="body">
+   <html lang="en">
+    <head>
+     <meta charset="utf-8"/>
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+         $(document).ready(function(){
+         var maxLength = 250;
+         $(".show-read-more").each(function(){
+          var myStr = $(this).text();
+          if($.trim(myStr).length > maxLength){
+            var newStr = myStr.substring(0, maxLength);
+            var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+            $(this).empty().html(newStr);
+            }
+            });
+            $(".read-more").click(function(){
+            $(this).siblings(".more-text").contents().unwrap();
+            $(this).remove();
+            });
+            });
+        </script>
+        <style>
+         .show-read-more .more-text{
+          display: none;
+         }
+        </style>
+</head>
+</html>
+ <apex:panelGrid >
+  <apex:form styleClass="body">
+  
+  <h1 style="font-size:18px;color:#00a2b9;align:Center"><strong>Courses Currently available for Enrolling</strong></h1>
+    
+    <table>
+     <apex:repeat value="{!coursesEnrolling}" var="ce" >
+       
+       <tr> 
+      
+                <apex:outputlink value="/apex/SCP_CourseInfo?id={!ce.Id}"  style="font-size:18px;color:#17a2b8;"> <strong>{!ce.Name}</strong></apex:outputlink>
+       
+       <br></br>
+               
+                <apex:outputText value="{!ce.Description__c} " styleClass="show-read-more" style="font-size:14px;" escape="false"></apex:outputText>
+                <apex:outputlink value="/apex/SCP_CourseInfo?id={!ce.Id}"> Learn more......</apex:outputlink>
+                <br></br>  
+                  
+         </tr>          
+      </apex:repeat>
+      </table>      
+     
+ </apex:form>
+ </apex:panelGrid>
+
+</apex:define>
+  </apex:composition>
+</apex:page>

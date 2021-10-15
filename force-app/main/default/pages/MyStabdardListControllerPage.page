@@ -1,0 +1,20 @@
+<apex:page standardController="Contact" recordSetVar="contacts" id="a">
+ <apex:form >
+  <apex:pageBlock >
+  
+      <apex:pageBlockTable value="{!contacts}" var="c">
+          <apex:column value="{!c.Name}"/>
+          <apex:column headerValue="Phone">
+          <apex:inputField value="{!c.Phone}"/>
+          </apex:column>
+          
+      </apex:pageBlockTable>
+      <apex:pageblockButtons >
+          <apex:commandbutton action="{!save}" value="save" />
+          <apex:commandbutton action="{!previous}" value="Previous"/>
+          <apex:commandbutton action="{!Next}" value="Next"/>
+      </apex:pageblockButtons>
+      
+  </apex:pageBlock>
+  </apex:form>
+  </apex:page>

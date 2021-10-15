@@ -1,0 +1,368 @@
+<apex:page showHeader="false" id="SCPSiteTemplate">
+   <head>
+   <apex:slds />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>sherpa | Consulting Partners</title>
+
+    <link rel="profile" href="http://gmpg.org/xfn/11"/>
+    <link rel="pingback" href="https://sherpaconsultingpartners.com/xmlrpc.php"/>
+    
+    
+    <!-- Favicon Icon -->
+    <link rel="icon" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/images/favicon.png" type="image/png"/>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/fonts/bw_nista/stylesheet.css"/>
+    <link rel="stylesheet" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/fonts/proxima_novaregular/stylesheet.css"/>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/lib/font-awesome/css/font-awesome.css"/>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/custom.css"/>
+    
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/responsive.css"/>
+    
+    
+
+    <link rel="dns-prefetch" href="//s.w.org"/>
+<link rel="alternate" type="application/rss+xml" title="sherpa » Feed" href="https://sherpaconsultingpartners.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="sherpa » Comments Feed" href="https://sherpaconsultingpartners.com/comments/feed/"/>
+<link rel="preconnect" href="https://secureservercdn.net" crossorigin=""/>
+        <script type="text/javascript">
+            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/secureservercdn.net\/198.71.233.129\/o2x.f0e.myftpupload.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1&time=1602241770"}};
+            !function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+        </script><script src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-includes/js/wp-emoji-release.min.js?ver=5.5.1&amp;time=1602241770" type="text/javascript" defer=""></script>
+        <style type="text/css">
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+</style>
+    <link rel="stylesheet" id="wp-block-library-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="font-awesome-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="contact-form-7-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="wordpress-popular-posts-css-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.2.4&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="_tk-style-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/themes/sherpa/style.css?ver=5.5.1&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="dashicons-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-includes/css/dashicons.min.css?ver=5.5.1&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="zoom-instagram-widget-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/instagram-widget-by-wpzoom/css/instagram-widget.css?ver=1.6.0&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.4.0&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="elementor-animations-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.7.3&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="elementor-frontend-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.7.3&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="elementor-global-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/uploads/elementor/css/global.css?ver=1569726929&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="elementor-post-7-css" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/uploads/elementor/css/post-7.css?ver=1572393503&amp;time=1602241770" type="text/css" media="all"/>
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.5.1" type="text/css" media="all"/>
+<script type="text/javascript" src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp&amp;time=1602241770" id="jquery-core-js"></script>
+<script type="application/json" id="wpp-json">
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/sherpaconsultingpartners.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":0,"token":"7655063d83","lang":0,"debug":0}
+</script>
+<script type="text/javascript" src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.2.4&amp;time=1602241770" id="wpp-js-js"></script>
+<script type="text/javascript" src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/instagram-widget-by-wpzoom/js/jquery.lazy.min.js?ver=1.4.2&amp;time=1602241770" id="zoom-instagram-widget-lazy-load-js"></script>
+<script type="text/javascript" src="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-content/plugins/instagram-widget-by-wpzoom/js/instagram-widget.js?ver=1.6.0&amp;time=1602241770" id="zoom-instagram-widget-js"></script>
+<link rel="https://api.w.org/" href="https://sherpaconsultingpartners.com/wp-json/"/><link rel="alternate" type="application/json" href="https://sherpaconsultingpartners.com/wp-json/wp/v2/pages/7"/><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sherpaconsultingpartners.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://secureservercdn.net/198.71.233.129/o2x.f0e.myftpupload.com/wp-includes/wlwmanifest.xml?time=1602241770"/> 
+<link rel="canonical" href="https://sherpaconsultingpartners.com/"/>
+<link rel="shortlink" href="https://sherpaconsultingpartners.com/"/>
+<link rel="alternate" type="application/json+oembed" href="https://sherpaconsultingpartners.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsherpaconsultingpartners.com%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="https://sherpaconsultingpartners.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsherpaconsultingpartners.com%2F&amp;format=xml"/>
+        <style type="text/css" id="wp-custom-css">
+            .contact-bttn-footer{
+    background-color: #209FDA;
+    position: fixed;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    height: 62px;
+    width: 200px;
+    -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.16);
+    -moz-box-shadow: 0 5px 40px rgba(0,0,0,.16);
+    box-shadow: 0 5px 40px rgba(0,0,0,.16);
+    cursor: pointer;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    color: #fff;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 58px;
+    font-weight: 700;
+    padding: 0 0 0 25px;
+    z-index: 9;
+}
+.contact-bttn-footer::before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    top: 16px;
+    left: 32px;
+    height: 30px;
+    width: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 25px;
+}
+.footer-popup-form{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #fff;
+    padding: 15px 25px;
+    max-width: 360px;
+    z-index: 9;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;  
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+    -moz-box-shadow: 0 3px 15px rgba(0,0,0,.16);
+    -webkit-box-shadow: 0 3px 15px rgba(0,0,0,.16);
+    box-shadow: 0 3px 15px rgba(0,0,0,.16);
+}
+.footer-popup-form.active-popup{
+    visibility: visible;
+    opacity: 1;
+}
+.footer-popup-form p{
+    margin-bottom: 8px;
+}
+.footer-popup-form{
+    display: block;
+}
+.footer-popup-form input[type="email"],
+.footer-popup-form input[type="text"]{
+    background-color: #FAFAFA;
+    padding: 8px 14px;
+    font-size: 20px;
+    color: #000;
+    border: 0;
+    width: 100%;
+    margin-bottom: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;  
+    font-size: 10pt; 
+    padding: 8px 12px; 
+    
+}
+.footer-popup-form input.wpcf7-not-valid{
+    border: solid 1px red;
+}
+.footer-popup-form div.wpcf7-response-output{
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+}
+.footer-popup-form textarea{
+    background-color: #FAFAFA;
+    padding: 8px 14px;
+    font-size: 20px;
+    color: #000;
+    border: 0;
+    width: 100%;
+    margin-bottom: 0;
+    height: 100px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;  
+    font-size: 10pt;  
+    padding: 8px 12px;
+}
+.page-section{
+background-color: #ECECEC;
+}
+.footer-form-header{
+    background-color: #209FDA;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -15px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-popup-form input[type="submit"]{
+    background-color: #209FDA;
+    color: #FFFFFF;
+    font-size: 12pt;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 32px;
+    -moz-box-shadow: 0 3px 15px rgba(0,0,0,.16);
+    -webkit-box-shadow: 0 3px 15px rgba(0,0,0,.16);
+    box-shadow: 0 3px 15px rgba(0,0,0,.16);
+    border: 0;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 7px 0;
+    margin-top: 10px;
+}
+.footer-popup-form span.wpcf7-not-valid-tip{
+    display: none !important; 
+}
+.footer-form-header h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.footer-form-header p{
+    font-size: 15px;
+    margin: 0 0 2px;
+    padding: 0 25px;
+    line-height: 20px;
+}
+
+.tml {
+    max-width: 600px;
+    margin: 50px auto 50px;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 25px;
+    padding-top: 25px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.post-login-from h4 {
+    margin: 0 0 22px !important;
+
+}
+.post-login-from span.wpcf7-list-item{
+    margin: 0;
+}  
+  .elementor .elementor-background-overlay, .elementor .elementor-background-slideshow {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.elementor {
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.elementor-9 .elementor-element.elementor-element-cc77491:not(.elementor-motion-effects-element-type-background), .elementor-9 .elementor-element.elementor-element-cc77491 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #ffffff;
+}    
+   </style>
+</head>
+  <!-- Page Banner Begin-->
+<section class="page-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>SCP COURSES</h1>
+                </div>
+                <div class="col-sm-1"></div>
+                
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </section>
+<!-- Page section start --> 
+<section class="page-section">
+<style>
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+</style>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="page-content">
+                                    <div data-elementor-type="wp-page" data-elementor-id="9" class="elementor elementor-9" data-elementor-settings="[]">
+            <div class="elementor-inner">
+                <div class="elementor-section-wrap">
+                            
+        <section class="elementor-element elementor-element-368b5b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="368b5b3" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-row">
+                <div class="elementor-element elementor-element-59db649 elementor-column elementor-col-100 elementor-top-column" data-id="59db649" data-element_type="column">
+            <div class="elementor-column-wrap  elementor-element-populated">
+                    <div class="elementor-widget-wrap">
+                <div class="elementor-element elementor-element-ca9052e elementor-widget elementor-widget-heading" data-id="ca9052e" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                  </div>
+                </div>
+                <div class="elementor-element elementor-element-b741260 elementor-icon-list--layout-traditional elementor-widget elementor-widget-icon-list" data-id="b741260" data-element_type="widget" data-widget_type="icon-list.default">
+                <div class="elementor-widget-container">
+                    <ul class="elementor-icon-list-items">
+                            <li class="elementor-icon-list-item">
+                              <apex:insert name="body">
+   
+                              </apex:insert>
+                            </li>
+                        </ul>
+                </div>
+                </div>
+                        </div>
+            </div>
+        </div>
+                        </div>
+            </div>
+        </section>
+                
+                        </div>
+            </div>
+        </div>
+                                </div>
+                                        
+                </div>
+            </div>
+        </div>
+    </section>  
+
+</apex:page>

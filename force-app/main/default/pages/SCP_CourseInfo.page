@@ -1,0 +1,37 @@
+<apex:page showHeader="false" controller="SCP_CourseInfoController" lightningStylesheets="true">
+ <apex:composition template="SCPTemplate">
+  <apex:define name="body">
+  <apex:panelGrid >
+   <apex:form styleClass="body">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".bPageBlock").css("background-color","#ffff");
+        $(".bPageBlock").css("border-color","#ffff");
+    });
+    </script>
+    
+    <style>
+
+.buttonStyle { width:25%; background-color:#209FDA; text-align:center; padding-top:4px; }
+
+</style>
+
+    <apex:pageBlock mode="edit">
+     <apex:pageBlocksection columns="1" showheader="false">
+        <apex:outputText value="{!courseInfo.Name}" label="Job Title" style="font-sze:24px;" />
+        <apex:outputText value="{!courseInfo.Course_Code__c}" label="Course ID"/>
+        
+        <apex:outputPanel >
+        <center>
+        <apex:commandButton id="Enroll" value="Enroll" action="/apex/EnrollmentForm?id={!courseInfo.id}" styleclass="buttonStyle" style="color:#ffff;background:#209FDA;font:bold;"/><tb></tb>
+        <apex:commandButton id="GoBack" value="Go Back" action="/apex/CourseEnrollment" styleclass="buttonStyle" style="color:#ffff;background:#209FDA;font:bold;"/>
+        </center>
+        </apex:outputPanel> 
+     </apex:pageBlocksection>
+     </apex:pageBlock>
+    </apex:form>
+   </apex:panelGrid>
+  </apex:define>
+ </apex:composition>
+</apex:page>

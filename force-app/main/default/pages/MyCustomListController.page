@@ -1,0 +1,9 @@
+<apex:page controller="MyCourseListController">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!Courses}" var="c">
+            <apex:column value="{!c.Name}"/>
+            
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

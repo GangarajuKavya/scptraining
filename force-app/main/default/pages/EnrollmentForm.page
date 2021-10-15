@@ -1,0 +1,70 @@
+<apex:page controller="SCPEnrollmentFormController" >
+  <apex:composition template="SCPTemplate">
+  <apex:define name="body">
+  <apex:form style="width:100%; font-size:100%" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".bPageBlock").css("background-color","#ffff");
+        $(".bPageBlock").css("border-color","#ffff");
+        
+    });
+    </script>
+    <style>
+    .font{
+    Font-Size: 18px;
+    }
+    </style>
+  <div style="background-color:#fff;">
+  <center>
+  <br/>
+  <br/>
+  <br/>
+   <apex:pageBlock title="STUDENT INFO" mode="edit"  >
+   <font color="#ff0000">
+  <apex:facet name="header">
+         <span style="color:#209FDA;font-size:30px;font-weight:bold;">STUDENT INFO</span>
+         </apex:facet>     
+  </font> 
+  <style>
+  .buttonStyle { width:20%;  background-color:#209FDA; text-align:center; padding-top:10px; }
+
+  </style>
+   <br></br>
+   <br></br>
+   <apex:pageMessages id="showmsg"></apex:pageMessages>
+   <br></br>
+   <center>  
+           <apex:pageBlockSection columns="1">  
+           <p>Please provide your Student Id below to enroll for {!courseName} course.</p>    
+                <apex:inputText label="Student ID" value="{!studentId}" style="font-size:14px;">
+                    <apex:actionSupport action="{!studentInfo}" event="onchange" rerender="b,a,c"/>
+                    </apex:inputText>
+                    <apex:outputText label="First Name" value="{!firstName}" id="a" />
+                <apex:outputText label="Last Name" value="{!IF(studentId='','',lastName)}" id="b"/>
+                <apex:outputText label="email" value="{!email}" id="c"/>
+                
+                   
+      
+                <apex:outputPanel >
+                
+        <center>
+        <apex:commandButton id="Enroll" value="Enroll" action="{!createClassRecord}" styleclass="buttonStyle" style="color:#ffff;background:#209FDA;font:bold;"/><tb></tb>
+        <apex:commandButton id="GoBack" value="Go Back" action="/apex/SCP_CourseInfo?id={!courseId}" styleclass="buttonStyle" style="color:#ffff;background:#209FDA;font:bold;"/>
+        </center>
+        </apex:outputPanel> 
+                
+                
+          
+             <br></br>
+             </apex:pageblocksection>
+    </center>
+                
+        
+   </apex:pageBlock>
+  </Center>
+  </div>
+ </apex:form>
+ </apex:define>
+ </apex:composition>
+</apex:page>
